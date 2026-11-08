@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1600, initial-scale=1.0" />
+  <title>VOXA House × Out(doer) — Creator Recruitment Campaign &amp; Retreat Lookbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --burgundy-deep: #26131B;
+      --burgundy-rich: #341D26;
+      --burgundy-mid: #4A2936;
+      --obsidian: #0E0B0D;
+      --ivory: #F4EFE6;
+      --cream: #EAE2D3;
+      --sand: #DFD4C2;
+      --gold-light: #E6CDA3;
+      --gold: #C8A273;
+      --gold-deep: #9E7B4F;
+      --ink: #181114;
+      --ink-muted: #5A4A50;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #140E11;
+      font-family: var(--sans);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+      padding: 32px 0 64px;
+    }
+
+    /* Fixed 1600 x 1000 Editorial Presentation Board (16:10 Gallery Ratio -> 3200x2000 @2x) */
+    .editorial-board {
+      width: 1600px;
+      height: 1000px;
+      position: relative;
+      overflow: hidden;
+      background: var(--ivory);
+      box-shadow: 0 32px 80px rgba(0, 0, 0, 0.55);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Shared Architectural Top Masthead */
+    .board-masthead {
+      height: 62px;
+      padding: 0 44px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(52, 29, 38, 0.14);
+      background: var(--ivory);
+      z-index: 10;
+      flex-shrink: 0;
+    }
+    .board-masthead.dark {
+      background: var(--obsidian);
+      border-bottom: 1px solid rgba(200, 162, 115, 0.22);
+      color: var(--ivory);
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .voxa-frame {
+      border: 1px solid currentColor;
+      padding: 4px 12px 3px;
+      text-align: center;
+      line-height: 1;
+    }
+    .voxa-frame .v {
+      font-family: var(--serif);
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      display: block;
+      margin-right: -0.28em;
+    }
+    .voxa-frame .h {
+      font-family: var(--sans);
+      font-size: 6.5px;
+      font-weight: 600;
+      letter-spacing: 0.38em;
+      display: block;
+      margin-top: 2px;
+      margin-right: -0.38em;
+      opacity: 0.85;
+    }
+    .collab-sep {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 16px;
+      color: var(--gold-deep);
+    }
+    .board-masthead.dark .collab-sep {
+      color: var(--gold-light);
+    }
+    .outdoer-mark {
+      font-family: var(--sans);
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    .outdoer-mark em {
+      font-family: var(--serif);
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .masthead-center {
+      font-size: 10px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      font-weight: 600;
+    }
+    .board-masthead.dark .masthead-center {
+      color: var(--gold-light);
+    }
+
+    .masthead-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+    }
+    .board-masthead.dark .masthead-right {
+      color: rgba(244, 239, 230, 0.72);
+    }
+    .swatch-dots {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .swatch-dots i {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      display: inline-block;
+      border: 1px solid rgba(158, 123, 79, 0.45);
+    }
+
+    /* Shared Bottom Footer Bar */
+    .board-foot {
+      height: 38px;
+      padding: 0 44px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(52, 29, 38, 0.14);
+      background: var(--cream);
+      font-size: 9.5px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      flex-shrink: 0;
+    }
+    .board-foot.dark {
+      background: #120C0F;
+      border-top: 1px solid rgba(200, 162, 115, 0.2);
+      color: rgba(244, 239, 230, 0.65);
+    }
+    .board-foot strong {
+      color: var(--burgundy-rich);
+      font-weight: 700;
+    }
+    .board-foot.dark strong {
+      color: var(--gold-light);
+    }
+
+    /* =========================================================================
+       BOARD 01: HERO PRESENTATION DECK SPREADS (COVER, PARTNERSHIP, RETREAT)
+       ========================================================================= */
+    .b1-body {
+      flex: 1;
+      min-height: 0;
+      padding: 18px 44px;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 16px;
+      background: linear-gradient(180deg, var(--ivory) 0%, var(--cream) 100%);
+    }
+
+    .b1-top-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 22px;
+      min-height: 0;
+      min-width: 0;
+    }
+
+    .slide-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      height: 100%;
+      min-height: 0;
+      min-width: 0;
+    }
+    .slide-meta-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 8.5px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    .slide-meta-bar strong {
+      color: var(--burgundy-rich);
+      font-weight: 700;
+    }
+
+    .widescreen-slide {
+      flex: 1;
+      min-height: 0;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 16px 36px rgba(24, 17, 20, 0.16);
+      border: 1px solid rgba(52, 29, 38, 0.18);
+    }
+
+    /* Slide 01: Cover Slide */
+    .s01-cover {
+      display: grid;
+      grid-template-columns: 1.06fr 0.94fr;
+      height: 100%;
+      min-height: 0;
+      background: linear-gradient(135deg, #2D1720 0%, #110B0E 100%);
+      color: var(--ivory);
+    }
+    .s01-left {
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-right: 1px solid rgba(230, 205, 163, 0.22);
+      position: relative;
+      min-height: 0;
+    }
+    .s01-left::after {
+      content: "";
+      position: absolute;
+      inset: 8px;
+      border: 1px solid rgba(230, 205, 163, 0.14);
+      pointer-events: none;
+    }
+    .s-kicker {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 8px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+    }
+    .s01-hero-copy {
+      margin: auto 0;
+    }
+    .s01-eyebrow {
+      font-size: 8.5px;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .s01-eyebrow::before {
+      content: "";
+      width: 22px;
+      height: 1px;
+      background: var(--gold);
+    }
+    .s01-hero-copy h2 {
+      font-family: var(--serif);
+      font-size: 33px;
+      line-height: 1.03;
+      font-weight: 500;
+      color: var(--ivory);
+      margin-bottom: 10px;
+    }
+    .s01-hero-copy h2 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+    .s01-hero-copy p {
+      font-size: 10.5px;
+      line-height: 1.5;
+      color: rgba(244, 239, 230, 0.76);
+      max-width: 95%;
+    }
+    .s01-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 10px;
+      border-top: 1px solid rgba(244, 239, 230, 0.12);
+    }
+    .s01-right {
+      display: grid;
+      grid-template-rows: 1.15fr 0.85fr;
+      gap: 2px;
+      background: rgba(230, 205, 163, 0.25);
+      position: relative;
+      min-height: 0;
+      overflow: hidden;
+    }
+    .s01-right img {
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      object-fit: cover;
+      display: block;
+    }
+    .real-photo-pill {
+      position: absolute;
+      bottom: 10px;
+      right: 12px;
+      background: rgba(14, 11, 13, 0.84);
+      border: 1px solid rgba(230, 205, 163, 0.45);
+      padding: 4px 9px;
+      font-size: 7.5px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+    }
+
+    /* Slide 02: Interior Partnership Slide (Warm Ivory Editorial Contrast) */
+    .s02-partner {
+      display: grid;
+      grid-template-columns: 1.12fr 0.88fr;
+      height: 100%;
+      min-height: 0;
+      background: var(--ivory);
+      color: var(--ink);
+    }
+    .s02-left {
+      padding: 18px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-right: 1px solid rgba(52, 29, 38, 0.12);
+      min-height: 0;
+    }
+    .s02-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7.5px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--burgundy-rich);
+      font-weight: 700;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(52, 29, 38, 0.12);
+    }
+    .s02-title-block h3 {
+      font-family: var(--serif);
+      font-size: 24px;
+      line-height: 1.06;
+      font-weight: 600;
+      color: var(--burgundy-deep);
+      margin-bottom: 4px;
+    }
+    .s02-title-block p {
+      font-size: 9.5px;
+      line-height: 1.42;
+      color: var(--ink-muted);
+    }
+    .s02-pillars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px;
+    }
+    .s02-pillar {
+      background: var(--cream);
+      border: 1px solid rgba(52, 29, 38, 0.12);
+      padding: 7px 9px;
+    }
+    .s02-pillar span {
+      font-size: 7px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold-deep);
+      font-weight: 700;
+      display: block;
+    }
+    .s02-pillar h4 {
+      font-family: var(--serif);
+      font-size: 13.5px;
+      color: var(--burgundy-deep);
+      margin: 1px 0;
+    }
+    .s02-pillar p {
+      font-size: 8px;
+      line-height: 1.3;
+      color: var(--ink-muted);
+    }
+    .s02-tiers {
+      background: var(--burgundy-rich);
+      color: var(--ivory);
+      padding: 7px 11px;
+      border: 1px solid var(--gold);
+    }
+    .s02-tiers-top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 7px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 4px;
+    }
+    .s02-tier-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px;
+    }
+    .s02-tier-grid div {
+      border-left: 1.5px solid var(--gold);
+      padding-left: 6px;
+    }
+    .s02-tier-grid strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: 13px;
+      color: var(--ivory);
+    }
+    .s02-tier-grid span {
+      font-size: 7.5px;
+      color: rgba(244, 239, 230, 0.72);
+    }
+    .s02-right {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 2px;
+      background: rgba(52, 29, 38, 0.15);
+      position: relative;
+      min-height: 0;
+      overflow: hidden;
+    }
+    .s02-right img {
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Bottom Half of Board 1: Hero Retreat Experience & Proposed 3-Day Itinerary Spread */
+    .b1-bottom-row {
+      display: grid;
+      grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+      gap: 22px;
+      min-height: 0;
+      min-width: 0;
+    }
+
+    /* Slide 10 Preview: The VOXA House Retreat Concept */
+    .s10-retreat-concept {
+      display: grid;
+      grid-template-columns: 0.94fr 1.06fr;
+      height: 100%;
+      min-height: 0;
+      background: var(--obsidian);
+      color: var(--ivory);
+    }
+    .s10-photos {
+      display: grid;
+      grid-template-rows: 1.12fr 0.88fr;
+      gap: 2px;
+      background: rgba(200, 162, 115, 0.25);
+      min-height: 0;
+      overflow: hidden;
+    }
+    .s10-photos img {
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      object-fit: cover;
+      display: block;
+    }
+    .s10-copy {
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: linear-gradient(155deg, #2B161F 0%, #110C0E 100%);
+      min-height: 0;
+    }
+    .s10-copy h3 {
+      font-family: var(--serif);
+      font-size: 25px;
+      line-height: 1.05;
+      font-weight: 500;
+      color: var(--ivory);
+    }
+    .s10-copy h3 em {
+      display: block;
+      font-size: 17px;
+      color: var(--gold-light);
+      margin-top: 3px;
+    }
+    .s10-copy p {
+      font-size: 9.5px;
+      line-height: 1.45;
+      color: rgba(244, 239, 230, 0.78);
+    }
+    .s10-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px;
+    }
+    .s10-hl {
+      border: 1px solid rgba(230, 205, 163, 0.24);
+      background: rgba(14, 11, 13, 0.5);
+      padding: 6px 8px;
+    }
+    .s10-hl strong {
+      display: block;
+      font-size: 8px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 1px;
+    }
+    .s10-hl span {
+      font-size: 8px;
+      color: rgba(244, 239, 230, 0.72);
+    }
+
+    /* Slide 11 Preview: Proposed Three-Day Retreat Itinerary */
+    .s11-itinerary {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      min-height: 0;
+      padding: 16px 20px;
+      background: linear-gradient(140deg, #341D26 0%, #190E13 100%);
+      color: var(--ivory);
+      position: relative;
+    }
+    .s11-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(230, 205, 163, 0.22);
+      flex-shrink: 0;
+    }
+    .s11-head h3 {
+      font-family: var(--serif);
+      font-size: 23px;
+      font-weight: 500;
+      color: var(--ivory);
+    }
+    .s11-head h3 em {
+      color: var(--gold-light);
+      font-style: italic;
+      font-size: 18px;
+      margin-left: 6px;
+    }
+    .s11-days {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      flex: 1;
+      min-height: 0;
+      margin: 10px 0;
+    }
+    .s11-day-card {
+      background: rgba(14, 11, 13, 0.52);
+      border: 1px solid rgba(230, 205, 163, 0.26);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      min-height: 0;
+    }
+    .s11-day-photo {
+      height: 66px;
+      width: 100%;
+      object-fit: cover;
+      border-bottom: 1px solid rgba(230, 205, 163, 0.22);
+      flex-shrink: 0;
+    }
+    .s11-day-body {
+      padding: 8px 10px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 0;
+    }
+    .s11-day-kicker {
+      font-size: 7.5px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      font-weight: 600;
+    }
+    .s11-day-body h4 {
+      font-family: var(--serif);
+      font-size: 16.5px;
+      color: var(--ivory);
+      margin: 1px 0 5px;
+      font-weight: 500;
+    }
+    .s11-day-body ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .s11-day-body li {
+      font-size: 8.5px;
+      color: rgba(244, 239, 230, 0.82);
+      padding-left: 9px;
+      position: relative;
+      line-height: 1.28;
+    }
+    .s11-day-body li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+    }
+    .s11-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7.5px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(230, 205, 163, 0.82);
+      padding-top: 6px;
+      border-top: 1px solid rgba(230, 205, 163, 0.16);
+      flex-shrink: 0;
+    }
+
+    /* =========================================================================
+       BOARD 02: SOCIAL CAMPAIGN (IG 4:5 + 1:1, IG STORY 9:16) & 8.5x11 FLYER
+       ========================================================================= */
+    .b2-body {
+      flex: 1;
+      padding: 24px 44px;
+      display: grid;
+      grid-template-columns: 0.96fr 0.78fr 1.26fr;
+      gap: 26px;
+      background: linear-gradient(135deg, var(--ivory) 0%, var(--cream) 62%, #E3D8C6 100%);
+    }
+
+    .col-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid rgba(52, 29, 38, 0.18);
+    }
+    .col-header strong {
+      font-size: 10.5px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--burgundy-rich);
+    }
+    .col-header span {
+      font-size: 9.5px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+    }
+
+    /* Deliverable 04: IG Portrait 4:5 + Square 1:1 */
+    .ig-col {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .ig-portrait-card {
+      width: 100%;
+      height: 555px;
+      position: relative;
+      overflow: hidden;
+      background: var(--obsidian);
+      border: 1px solid rgba(52, 29, 38, 0.25);
+      box-shadow: 0 20px 44px rgba(24, 17, 20, 0.18);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .ig-portrait-bg {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 2px;
+      background: rgba(230, 205, 163, 0.3);
+    }
+    .ig-portrait-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .ig-portrait-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(14,11,13,0.55) 0%, rgba(14,11,13,0.12) 38%, rgba(38,19,27,0.92) 78%, rgba(14,11,13,0.98) 100%);
+    }
+    .ig-p-top {
+      position: relative;
+      z-index: 2;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--ivory);
+    }
+    .ig-p-tag {
+      font-size: 8.5px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      background: rgba(14, 11, 13, 0.72);
+      border: 1px solid rgba(230, 205, 163, 0.45);
+      color: var(--gold-light);
+    }
+    .ig-p-bottom {
+      position: relative;
+      z-index: 2;
+      padding: 22px 22px 20px;
+      color: var(--ivory);
+    }
+    .ig-p-bottom .kicker {
+      font-size: 9px;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 6px;
+    }
+    .ig-p-bottom h3 {
+      font-family: var(--serif);
+      font-size: 34px;
+      line-height: 1.02;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    .ig-p-bottom .collab-line {
+      font-family: var(--serif);
+      font-size: 18px;
+      color: var(--gold-light);
+      margin-bottom: 4px;
+    }
+    .ig-p-bottom .pillars {
+      font-size: 9.5px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--ivory);
+      margin-bottom: 8px;
+    }
+    .ig-p-bottom .seeking {
+      font-size: 11px;
+      color: rgba(244, 239, 230, 0.82);
+      margin-bottom: 14px;
+    }
+    .ig-cta-strip {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--ivory);
+      color: var(--burgundy-deep);
+      padding: 10px 14px;
+      border-left: 3px solid var(--gold);
+    }
+    .ig-cta-strip strong {
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .ig-cta-strip span {
+      font-size: 9.5px;
+      color: var(--burgundy-rich);
+      font-weight: 600;
+    }
+
+    /* Square 1080x1080 Companion Card */
+    .ig-square-bar {
+      margin-top: 14px;
+      flex: 1;
+      background: var(--burgundy-deep);
+      color: var(--ivory);
+      border: 1px solid rgba(200, 162, 115, 0.35);
+      padding: 12px 14px;
+      display: grid;
+      grid-template-columns: 156px 1fr;
+      gap: 14px;
+      align-items: center;
+      box-shadow: 0 14px 30px rgba(24, 17, 20, 0.14);
+    }
+    .sq-preview {
+      width: 156px;
+      height: 156px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--gold);
+    }
+    .sq-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .sq-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(14,11,13,0.2) 0%, rgba(38,19,27,0.92) 100%);
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: var(--ivory);
+    }
+    .sq-overlay span {
+      font-size: 7px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+    }
+    .sq-overlay h5 {
+      font-family: var(--serif);
+      font-size: 15px;
+      line-height: 1.05;
+      font-weight: 500;
+      margin: 2px 0 4px;
+    }
+    .sq-overlay small {
+      font-size: 7px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(244, 239, 230, 0.85);
+    }
+    .sq-meta h4 {
+      font-family: var(--serif);
+      font-size: 20px;
+      color: var(--gold-light);
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .sq-meta p {
+      font-size: 10px;
+      line-height: 1.5;
+      color: rgba(244, 239, 230, 0.78);
+      margin-bottom: 8px;
+    }
+    .sq-meta .placeholder-tag {
+      display: inline-block;
+      font-size: 8.5px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border: 1px solid rgba(230, 205, 163, 0.35);
+      color: var(--gold-light);
+    }
+
+    /* Deliverable 05: Instagram Story (1080 x 1920 px Vertical 9:16) */
+    .story-frame {
+      flex: 1;
+      background: var(--obsidian);
+      border: 1px solid rgba(52, 29, 38, 0.28);
+      box-shadow: 0 22px 48px rgba(24, 17, 20, 0.22);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 22px 24px;
+      color: var(--ivory);
+    }
+    .story-bg-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.82;
+    }
+    .story-shade {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(14,11,13,0.78) 0%, rgba(38,19,27,0.28) 38%, rgba(38,19,27,0.88) 72%, rgba(14,11,13,0.96) 100%);
+    }
+    .story-top-safe {
+      position: relative;
+      z-index: 2;
+    }
+    .story-bars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      margin-bottom: 12px;
+    }
+    .story-bars span {
+      height: 2px;
+      background: rgba(244, 239, 230, 0.35);
+    }
+    .story-bars span:first-child {
+      background: var(--gold-light);
+    }
+    .story-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 8.5px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+    }
+    .story-editorial-inset {
+      position: relative;
+      z-index: 2;
+      margin: auto 0 18px;
+      background: rgba(20, 12, 16, 0.84);
+      border: 1px solid rgba(230, 205, 163, 0.42);
+      padding: 20px 18px;
+      backdrop-filter: blur(6px);
+    }
+    .story-inset-thumb {
+      width: 100%;
+      height: 165px;
+      object-fit: cover;
+      border: 1px solid rgba(230, 205, 163, 0.25);
+      margin-bottom: 14px;
+      display: block;
+    }
+    .story-editorial-inset .eyebrow {
+      font-size: 8.5px;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 6px;
+    }
+    .story-editorial-inset h3 {
+      font-family: var(--serif);
+      font-size: 36px;
+      line-height: 1.0;
+      font-weight: 500;
+      color: var(--ivory);
+      margin-bottom: 8px;
+    }
+    .story-editorial-inset .collab-sub {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-style: italic;
+      color: var(--gold-light);
+      margin-bottom: 8px;
+    }
+    .story-editorial-inset p {
+      font-size: 11px;
+      line-height: 1.5;
+      color: rgba(244, 239, 230, 0.85);
+    }
+    .story-bottom-safe {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+    .link-sticker-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--ivory);
+      color: var(--burgundy-deep);
+      padding: 11px 20px;
+      border-radius: 999px;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+      border: 1.5px solid var(--gold);
+    }
+    .safe-zone-note {
+      display: block;
+      margin-top: 8px;
+      font-size: 8px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(230, 205, 163, 0.78);
+    }
+
+    /* Deliverable 06: 8.5 x 11 in Print & Digital Recruitment Flyer */
+    .flyer-paper {
+      flex: 1;
+      background: var(--ivory);
+      border: 1px solid rgba(52, 29, 38, 0.24);
+      box-shadow: 0 24px 54px rgba(24, 17, 20, 0.2);
+      padding: 24px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+    .flyer-paper::before {
+      content: "";
+      position: absolute;
+      inset: 8px;
+      border: 1px solid rgba(158, 123, 79, 0.28);
+      pointer-events: none;
+    }
+    .flyer-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 12px;
+      border-bottom: 1.5px solid var(--burgundy-rich);
+    }
+    .flyer-hero {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 18px;
+      align-items: center;
+      padding: 12px 0;
+    }
+    .flyer-hero-copy .eyebrow {
+      font-size: 9px;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gold-deep);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .flyer-hero-copy h3 {
+      font-family: var(--serif);
+      font-size: 31px;
+      line-height: 1.04;
+      font-weight: 600;
+      color: var(--burgundy-deep);
+      margin-bottom: 8px;
+    }
+    .flyer-hero-copy p {
+      font-size: 10.5px;
+      line-height: 1.52;
+      color: var(--ink-muted);
+    }
+    .flyer-hero-triptych {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      height: 172px;
+    }
+    .flyer-hero-triptych img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 1px solid rgba(52, 29, 38, 0.18);
+    }
+    .flyer-grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .flyer-card {
+      background: var(--cream);
+      border: 1px solid rgba(52, 29, 38, 0.15);
+      padding: 12px 14px;
+    }
+    .flyer-card h4 {
+      font-family: var(--serif);
+      font-size: 18px;
+      color: var(--burgundy-deep);
+      margin-bottom: 6px;
+      border-bottom: 1px solid rgba(52, 29, 38, 0.12);
+      padding-bottom: 4px;
+    }
+    .flyer-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .flyer-card li {
+      font-size: 9.5px;
+      color: var(--ink);
+      padding-left: 11px;
+      position: relative;
+      line-height: 1.38;
+    }
+    .flyer-card li::before {
+      content: "◆";
+      font-size: 6px;
+      color: var(--gold-deep);
+      position: absolute;
+      left: 0;
+      top: 3px;
+    }
+    .flyer-retreat-strip {
+      background: linear-gradient(135deg, #341D26 0%, #1B0F14 100%);
+      color: var(--ivory);
+      padding: 12px 16px;
+      border: 1px solid var(--gold);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 14px;
+      align-items: center;
+    }
+    .flyer-retreat-strip h4 {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: 500;
+      color: var(--gold-light);
+      margin-bottom: 3px;
+    }
+    .flyer-retreat-strip p {
+      font-size: 9.5px;
+      line-height: 1.42;
+      color: rgba(244, 239, 230, 0.84);
+    }
+    .flyer-retreat-badge {
+      padding: 6px 11px;
+      border: 1px solid var(--gold-light);
+      font-size: 8.5px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      white-space: nowrap;
+    }
+    .flyer-apply-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
+      border-top: 1px solid rgba(52, 29, 38, 0.18);
+    }
+    .flyer-apply-copy h5 {
+      font-family: var(--serif);
+      font-size: 18px;
+      color: var(--burgundy-deep);
+      margin-bottom: 2px;
+    }
+    .flyer-apply-copy p {
+      font-size: 9.5px;
+      color: var(--ink-muted);
+      margin-bottom: 5px;
+    }
+    .flyer-url-pill {
+      display: inline-block;
+      background: var(--burgundy-deep);
+      color: var(--gold-light);
+      padding: 5px 12px;
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .flyer-qr-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .flyer-qr-box img {
+      width: 68px;
+      height: 68px;
+      border: 1.5px solid var(--burgundy-rich);
+      padding: 3px;
+      background: #140E11;
+    }
+    .flyer-qr-box span {
+      font-size: 8px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
+
+    /* =========================================================================
+       BOARD 03: COMPLETE 12-SLIDE VISUAL DECK CONTACT SHEET (ALL 12 SLIDES)
+       ========================================================================= */
+    .b3-body {
+      flex: 1;
+      min-height: 0;
+      padding: 18px 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #160F13;
+      color: var(--ivory);
+      overflow: hidden;
+    }
+    .b3-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 14px 16px;
+      flex: 1;
+      min-height: 0;
+    }
+    .mini-slide-card {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      min-height: 0;
+      overflow: hidden;
+    }
+    .mini-slide-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 8px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(244, 239, 230, 0.68);
+      flex-shrink: 0;
+    }
+    .mini-slide-label strong {
+      color: var(--gold-light);
+    }
+    .mini-slide-frame {
+      flex: 1;
+      min-height: 0;
+      border: 1px solid rgba(230, 205, 163, 0.32);
+      overflow: hidden;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+    }
+    .mini-slide-frame.dark-slide {
+      background: linear-gradient(135deg, #2D1720 0%, #120C0F 100%);
+      color: var(--ivory);
+    }
+    .mini-slide-frame.ivory-slide {
+      background: var(--ivory);
+      color: var(--ink);
+    }
+    .mini-slide-frame.cream-slide {
+      background: var(--cream);
+      color: var(--ink);
+    }
+    .ms-copy {
+      padding: 11px 13px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 0;
+    }
+    .ms-kicker {
+      font-size: 7px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 700;
+    }
+    .ivory-slide .ms-kicker,
+    .cream-slide .ms-kicker {
+      color: var(--burgundy-rich);
+    }
+    .ms-copy h4 {
+      font-family: var(--serif);
+      font-size: 16px;
+      line-height: 1.06;
+      font-weight: 600;
+      margin: 3px 0;
+    }
+    .ms-copy p {
+      font-size: 8px;
+      line-height: 1.36;
+      opacity: 0.84;
+    }
+    .ms-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+      margin-top: 3px;
+    }
+    .ms-tags span {
+      font-size: 6.5px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 2px 5px;
+      border: 1px solid currentColor;
+      opacity: 0.75;
+    }
+    .ms-foot {
+      font-size: 6.5px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      opacity: 0.62;
+      padding-top: 4px;
+      border-top: 1px solid rgba(158, 123, 79, 0.25);
+      display: flex;
+      justify-content: space-between;
+    }
+    .ms-photo {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      min-height: 0;
+      overflow: hidden;
+    }
+    .ms-photo img {
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      object-fit: cover;
+      display: block;
+    }
+    .ms-photo.split-2 {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 1.5px;
+      background: rgba(200, 162, 115, 0.3);
+      min-height: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =======================================================================
+       BOARD 01: REQUIRED INITIAL SUBMISSION SLIDE PREVIEWS (COVER, PARTNERSHIP, RETREAT)
+       ======================================================================= -->
+  <section class="editorial-board" id="board-01">
+    <header class="board-masthead">
+      <div class="brand-lockup">
+        <div class="voxa-frame">
+          <span class="v">VOXA</span>
+          <span class="h">HOUSE</span>
+        </div>
+        <span class="collab-sep">×</span>
+        <div class="outdoer-mark"><em>(Out)</em>doer.</div>
+      </div>
+      <div class="masthead-center">
+        Board 01 / 03 · Collaborative Creator Recruitment &amp; Retreat Presentation Previews (16:9 Widescreen)
+      </div>
+      <div class="masthead-right">
+        <span>VOXA Vision 2027 Colorway</span>
+        <div class="swatch-dots">
+          <i style="background:#341D26"></i>
+          <i style="background:#0E0B0D"></i>
+          <i style="background:#F4EFE6"></i>
+          <i style="background:#EAE2D3"></i>
+          <i style="background:#C8A273"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="b1-body">
+      <!-- Top Row: Slide 01 Cover + Slide 02/06 Partnership & Affiliate Overview -->
+      <div class="b1-top-row">
+        <!-- Deliverable 01: Deck Cover Slide -->
+        <div class="slide-wrap">
+          <div class="slide-meta-bar">
+            <strong>Deliverable 01 · Presentation Cover Slide (Slide 01 of 12)</strong>
+            <span>1920 × 1080 px · Deep Burgundy Noir &amp; Restrained Gold</span>
+          </div>
+          <div class="widescreen-slide">
+            <div class="s01-cover">
+              <div class="s01-left">
+                <div class="s-kicker">
+                  <span>CREATOR RECRUITMENT · 2026 / 2027</span>
+                  <span>SLIDE 01 / 12</span>
+                </div>
+                <div class="s01-hero-copy">
+                  <div class="s01-eyebrow">Official Brand Collaboration</div>
+                  <h2>Where Creators Build <em>Culture, Content &amp; Community.</em></h2>
+                  <p>An editorial invitation for fashion, lifestyle, wellness, and travel creators to grow within the VOXA House creator ecosystem in partnership with Outdoer.</p>
+                </div>
+                <div class="s01-foot">
+                  <div class="brand-lockup" style="gap:10px;">
+                    <div class="voxa-frame" style="padding:3px 9px;">
+                      <span class="v" style="font-size:11px;">VOXA</span>
+                      <span class="h" style="font-size:5px;">HOUSE</span>
+                    </div>
+                    <span class="collab-sep" style="color:var(--gold-light);font-size:13px;">×</span>
+                    <div class="outdoer-mark" style="font-size:14px;"><em>(Out)</em>doer.</div>
+                  </div>
+                  <span style="font-size:8px;letter-spacing:0.2em;color:var(--gold-light);text-transform:uppercase;">VOXAHOUSE.COM/JOIN</span>
+                </div>
+              </div>
+              <div class="s01-right">
+                <img src="assets/photos/voxa_p5_92_1073x719.png" alt="VOXA House Editorial Portrait" />
+                <img src="assets/photos/outdoer_p1_6_2924x1649.jpeg" alt="Outdoer Studio Apparel" />
+                <span class="real-photo-pill">100% Approved Source Photography</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deliverable 02: Interior Partnership Slide -->
+        <div class="slide-wrap">
+          <div class="slide-meta-bar">
+            <strong>Deliverable 02 · Interior Partnership &amp; Participation Slide (Slide 06 &amp; 08)</strong>
+            <span>1920 × 1080 px · Editorial Ivory &amp; Burgundy Contrast</span>
+          </div>
+          <div class="widescreen-slide">
+            <div class="s02-partner">
+              <div class="s02-left">
+                <div class="s02-header">
+                  <span>THE COLLABORATION · HOW PARTICIPATION WORKS</span>
+                  <span>SLIDE 06 / 12</span>
+                </div>
+                <div class="s02-title-block">
+                  <h3>Thirteen Brands. Eight Scenes. One Creator Ecosystem.</h3>
+                  <p>VOXA House leads creator community, production days, and curated retreats while Outdoer outfits creators across eight real-world lifestyle scenes.</p>
+                </div>
+                <div class="s02-pillars">
+                  <div class="s02-pillar">
+                    <span>01 · Gifting</span>
+                    <h4>Seasonal Looks</h4>
+                    <p>Curated Outdoer wardrobe selections [Terms TBC].</p>
+                  </div>
+                  <div class="s02-pillar">
+                    <span>02 · Content</span>
+                    <h4>Unbox &amp; Style</h4>
+                    <p>Try-on reels, organic styling &amp; crew shoot days.</p>
+                  </div>
+                  <div class="s02-pillar">
+                    <span>03 · Freedom</span>
+                    <h4>No Exclusivity</h4>
+                    <p>Keep existing brand deals &amp; authentic voice.</p>
+                  </div>
+                </div>
+                <div class="s02-tiers">
+                  <div class="s02-tiers-top">
+                    <span>Affiliate Growth Structure</span>
+                    <span>[Placeholder · Subject to Final Approved Terms]</span>
+                  </div>
+                  <div class="s02-tier-grid">
+                    <div>
+                      <strong>12% · Basecamp</strong>
+                      <span>$0–$4,999 Annual</span>
+                    </div>
+                    <div>
+                      <strong>15% · Trailhead</strong>
+                      <span>$5,000–$14,999</span>
+                    </div>
+                    <div>
+                      <strong>18% · Summit</strong>
+                      <span>$15,000+ · Retreat Priority</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="s02-right">
+                <img src="assets/photos/voxa_p1_42_1076x717.png" alt="VOXA House Welcome Gifting Kit" />
+                <img src="assets/photos/outdoer_p7_54_2931x1652.jpeg" alt="Outdoer Lifestyle Streetwear" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Row: Slide 10 Retreat Experience + Deliverable 03 (Slide 11 Proposed 3-Day Itinerary) -->
+      <div class="b1-bottom-row">
+        <!-- Slide 10: The VOXA House Retreat Concept -->
+        <div class="slide-wrap">
+          <div class="slide-meta-bar">
+            <strong>Distinct Retreat Concept · The VOXA House Residency (Slide 10 of 12)</strong>
+            <span>1920 × 1080 px · Architectural Luxury &amp; Community</span>
+          </div>
+          <div class="widescreen-slide">
+            <div class="s10-retreat-concept">
+              <div class="s10-photos">
+                <img src="assets/photos/voxa_p15_186_1073x719.png" alt="VOXA House Coastal Sunset Lounge" />
+                <img src="assets/photos/voxa_p6_108_922x615.png" alt="VOXA House Architectural Residence" />
+              </div>
+              <div class="s10-copy">
+                <div class="s-kicker">
+                  <span>SIGNATURE RESIDENCY</span>
+                  <span>SLIDE 10 / 12</span>
+                </div>
+                <div>
+                  <h3>The VOXA House Retreat <em>In collaboration with (Out)doer.</em></h3>
+                  <p style="margin-top:8px;">Designed as a signature VOXA House residency—uniting high-fashion editorial production, personal brand elevation, coastal restoration, and lasting creator relationships.</p>
+                </div>
+                <div class="s10-highlights">
+                  <div class="s10-hl">
+                    <strong>Editorial Production</strong>
+                    <span>Directed lookbook &amp; reel shoots on location</span>
+                  </div>
+                  <div class="s10-hl">
+                    <strong>Wardrobe Styling</strong>
+                    <span>Curated Outdoer seasonal fitting sessions</span>
+                  </div>
+                  <div class="s10-hl">
+                    <strong>Brand Strategy</strong>
+                    <span>Creator roundtables &amp; growth workshops</span>
+                  </div>
+                  <div class="s10-hl">
+                    <strong>Wellness &amp; Dining</strong>
+                    <span>Morning movement &amp; candlelit long-table dinners</span>
+                  </div>
+                </div>
+                <div style="font-size:7.5px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(230,205,163,0.75);">
+                  DESTINATION, DATES &amp; ELIGIBILITY TERMS TO BE CONFIRMED
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deliverable 03: Proposed Three-Day Retreat Itinerary Slide -->
+        <div class="slide-wrap">
+          <div class="slide-meta-bar">
+            <strong>Deliverable 03 · Proposed Retreat Itinerary Slide (Slide 11 of 12)</strong>
+            <span>1920 × 1080 px · Three-Day Residency Schedule</span>
+          </div>
+          <div class="widescreen-slide">
+            <div class="s11-itinerary">
+              <div class="s11-head">
+                <div>
+                  <div style="font-size:8px;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold-light);margin-bottom:3px;">
+                    PROPOSED THREE-DAY RESIDENCY SCHEDULE · SLIDE 11 / 12
+                  </div>
+                  <h3>The VOXA House Retreat <em>Proposed Itinerary</em></h3>
+                </div>
+                <span style="font-size:8.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-light);border:1px solid rgba(230,205,163,0.4);padding:4px 9px;">
+                  In Collaboration With Outdoer
+                </span>
+              </div>
+
+              <div class="s11-days">
+                <div class="s11-day-card">
+                  <img class="s11-day-photo" src="assets/photos/voxa_p6_107_615x410.png" alt="Day One Residence Arrival" />
+                  <div class="s11-day-body">
+                    <div>
+                      <span class="s11-day-kicker">Day One</span>
+                      <h4>Arrive &amp; Connect</h4>
+                      <ul>
+                        <li>Arrival &amp; private residence check-in</li>
+                        <li>Welcome gathering &amp; refreshments</li>
+                        <li>Outdoer seasonal wardrobe styling</li>
+                        <li>Creator introductions &amp; welcome dinner</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="s11-day-card">
+                  <img class="s11-day-photo" src="assets/photos/outdoer_p8_59_2043x1152.jpeg" alt="Day Two Candlelit Dinner" />
+                  <div class="s11-day-body">
+                    <div>
+                      <span class="s11-day-kicker">Day Two</span>
+                      <h4>Create &amp; Explore</h4>
+                      <ul>
+                        <li>Morning wellness movement &amp; breakfast</li>
+                        <li>Collaborative fashion &amp; lifestyle shoots</li>
+                        <li>Curated coastal destination experience</li>
+                        <li>Candlelit long-table evening dinner</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="s11-day-card">
+                  <img class="s11-day-photo" src="assets/photos/voxa_p7_112_538x732.png" alt="Day Three Studio Roundtable" />
+                  <div class="s11-day-body">
+                    <div>
+                      <span class="s11-day-kicker">Day Three</span>
+                      <h4>Build &amp; Depart</h4>
+                      <ul>
+                        <li>Creator roundtable &amp; brand strategy</li>
+                        <li>Final golden-hour content session</li>
+                        <li>Farewell community brunch</li>
+                        <li>Departures &amp; ongoing network access</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="s11-foot">
+                <span>PROPOSED ITINERARY ONLY · DATES, DESTINATION, ACCOMMODATIONS, ELIGIBILITY &amp; INCLUDED EXPENSES TBC</span>
+                <span>VOXAHOUSE.COM/JOIN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="board-foot">
+      <div><strong>Real Photography Verification:</strong> 100% Approved Imagery from <em>VOXA House Vision 2027.pdf</em> &amp; <em>Outdoer Ambassador Deck.pdf</em> (Zero AI)</div>
+      <div><strong>Typography:</strong> Cormorant Garamond + Plus Jakarta Sans · Editable PowerPoint / Canva / Adobe</div>
+    </footer>
+  </section>
+
+  <!-- =======================================================================
+       BOARD 02: COORDINATED INSTAGRAM FEED, STORY & PRINT RECRUITMENT FLYER
+       ======================================================================= -->
+  <section class="editorial-board" id="board-02">
+    <header class="board-masthead">
+      <div class="brand-lockup">
+        <div class="voxa-frame">
+          <span class="v">VOXA</span>
+          <span class="h">HOUSE</span>
+        </div>
+        <span class="collab-sep">×</span>
+        <div class="outdoer-mark"><em>(Out)</em>doer.</div>
+      </div>
+      <div class="masthead-center">
+        Board 02 / 03 · Coordinated Social Campaign (IG 4:5 + 1:1, IG Story 9:16) &amp; 8.5×11" Print Flyer
+      </div>
+      <div class="masthead-right">
+        <span>Deliverables 04 · 05 · 06</span>
+      </div>
+    </header>
+
+    <div class="b2-body">
+      <!-- Column 1: Deliverable 04 (Instagram Feed 1080x1350 + 1080x1080) -->
+      <div class="ig-col">
+        <div class="col-header">
+          <strong>04 · Instagram Feed Post</strong>
+          <span>1080×1350 Portrait + 1080×1080 Square</span>
+        </div>
+
+        <div class="ig-portrait-card">
+          <div class="ig-portrait-bg">
+            <img src="assets/photos/outdoer_p3_38_1143x1649.jpeg" alt="Outdoer Autumn Fashion" />
+            <img src="assets/photos/voxa_p3_50_724x543.png" alt="VOXA House Editorial Portrait" />
+          </div>
+          <div class="ig-portrait-overlay"></div>
+
+          <div class="ig-p-top">
+            <div class="brand-lockup" style="gap:10px;">
+              <div class="voxa-frame" style="padding:3px 9px;">
+                <span class="v" style="font-size:12px;">VOXA</span>
+                <span class="h" style="font-size:5.5px;">HOUSE</span>
+              </div>
+              <span class="collab-sep" style="color:var(--gold-light);font-size:14px;">×</span>
+              <div class="outdoer-mark" style="font-size:15px;"><em>(Out)</em>doer.</div>
+            </div>
+            <span class="ig-p-tag">Creator Casting</span>
+          </div>
+
+          <div class="ig-p-bottom">
+            <div class="kicker">Creator Recruitment Campaign</div>
+            <h3>Your next chapter starts here.</h3>
+            <div class="collab-line">VOXA House × <em>(Out)</em>doer.</div>
+            <div class="pillars">Fashion · Content · Community</div>
+            <div class="seeking">Seeking creators to grow with us.</div>
+            <div class="ig-cta-strip">
+              <strong>Apply to join the creator community</strong>
+              <span>@voxahouse · voxahouse.com/join</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ig-square-bar">
+          <div class="sq-preview">
+            <img src="assets/photos/voxa_p5_92_1073x719.png" alt="1080x1080 Square Crop" />
+            <div class="sq-overlay">
+              <span>VOXA House × Outdoer</span>
+              <h5>Your next chapter starts here.</h5>
+              <small>Fashion · Content · Community</small>
+            </div>
+          </div>
+          <div class="sq-meta">
+            <h4>1080 × 1080 px Square Adaptation</h4>
+            <p>Matching grid crop with balanced hierarchy, mobile-legible serif display, and editable handle/URL bar.</p>
+            <span class="placeholder-tag">[ Placeholder: @voxahouse / URL ]</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2: Deliverable 05 (Instagram Story 1080x1920) -->
+      <div class="ig-col">
+        <div class="col-header">
+          <strong>05 · Instagram Story</strong>
+          <span>1080×1920 px · 9:16 Safe Zones</span>
+        </div>
+
+        <div class="story-frame">
+          <img class="story-bg-photo" src="assets/photos/outdoer_p4_41_1189x1652.jpeg" alt="Outdoer Studio Editorial" />
+          <div class="story-shade"></div>
+
+          <div class="story-top-safe">
+            <div class="story-bars"><span></span><span></span><span></span></div>
+            <div class="story-header-row">
+              <div class="brand-lockup" style="gap:8px;">
+                <div class="voxa-frame" style="padding:2px 7px;">
+                  <span class="v" style="font-size:10px;">VOXA</span>
+                  <span class="h" style="font-size:4.5px;">HOUSE</span>
+                </div>
+                <span class="collab-sep" style="color:var(--gold-light);font-size:12px;">×</span>
+                <div class="outdoer-mark" style="font-size:13px;"><em>(Out)</em>doer.</div>
+              </div>
+              <span>9:16 Story</span>
+            </div>
+          </div>
+
+          <div class="story-editorial-inset">
+            <img class="story-inset-thumb" src="assets/photos/voxa_p6_106_687x573.png" alt="VOXA House Fashion Shadow" />
+            <div class="eyebrow">Creator Opportunity</div>
+            <h3>Create with us.</h3>
+            <div class="collab-sub">VOXA House × (Out)doer.</div>
+            <p>A new opportunity for fashion and lifestyle creators. Seasonal styling, shoot days, affiliate tiers &amp; The VOXA House Retreat.</p>
+          </div>
+
+          <div class="story-bottom-safe">
+            <div class="link-sticker-pill">
+              <span>🔗 Apply Here · voxahouse.com/join</span>
+            </div>
+            <span class="safe-zone-note">Reserved Interactive Link Sticker Zone</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3: Deliverable 06 (8.5 x 11 inch Recruitment Flyer) -->
+      <div class="ig-col">
+        <div class="col-header">
+          <strong>06 · Recruitment Flyer Preview</strong>
+          <span>8.5 × 11 in · Print With Bleed + Digital PDF</span>
+        </div>
+
+        <div class="flyer-paper">
+          <div class="flyer-top-bar">
+            <div class="brand-lockup" style="gap:12px;color:var(--burgundy-deep);">
+              <div class="voxa-frame" style="padding:3px 10px;">
+                <span class="v" style="font-size:13px;">VOXA</span>
+                <span class="h" style="font-size:5.5px;">HOUSE</span>
+              </div>
+              <span class="collab-sep" style="font-size:15px;">×</span>
+              <div class="outdoer-mark" style="font-size:16px;"><em>(Out)</em>doer.</div>
+            </div>
+            <span style="font-size:8.5px;letter-spacing:0.22em;text-transform:uppercase;color:var(--burgundy-rich);font-weight:700;">
+              Creator Recruitment · 2026 / 2027
+            </span>
+          </div>
+
+          <div class="flyer-hero">
+            <div class="flyer-hero-copy">
+              <div class="eyebrow">Fashion · Content · Community</div>
+              <h3>Your Next Chapter Starts With VOXA House × Outdoer.</h3>
+              <p>VOXA House is partnering with multi-brand lifestyle retailer Outdoer to invite creators into an elevated ecosystem of seasonal styling, collaborative shoots, affiliate opportunities, and curated residency retreats.</p>
+            </div>
+            <div class="flyer-hero-triptych">
+              <img src="assets/photos/outdoer_p3_38_1143x1649.jpeg" alt="Outdoer Apparel" />
+              <img src="assets/photos/voxa_p15_186_1073x719.png" alt="VOXA Retreat Sunset" />
+            </div>
+          </div>
+
+          <div class="flyer-grid-2col">
+            <div class="flyer-card">
+              <h4>Who We’re Looking For</h4>
+              <ul>
+                <li>Fashion &amp; contemporary style storytellers</li>
+                <li>Elevated lifestyle, travel &amp; outdoor creators</li>
+                <li>Wellness, movement &amp; community voices</li>
+                <li>Creators seeking authentic, non-exclusive partnerships</li>
+              </ul>
+            </div>
+            <div class="flyer-card">
+              <h4>The Creator Opportunity</h4>
+              <ul>
+                <li>Seasonal Outdoer wardrobe selections [Terms TBC]</li>
+                <li>Affiliate commission tiers (12% · 15% · 18% [TBC])</li>
+                <li>Quarterly collaborative shoot days &amp; Media Days</li>
+                <li>Full creative freedom with zero brand exclusivity</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flyer-retreat-strip">
+            <div>
+              <h4>The VOXA House Retreat · In Collaboration with Outdoer</h4>
+              <p>Proposed 3-Day Creator Residency: Day 1 Arrive &amp; Connect · Day 2 Create &amp; Explore · Day 3 Build &amp; Depart. (Dates, destination, eligibility &amp; included expenses TBC).</p>
+            </div>
+            <span class="flyer-retreat-badge">Proposed 3-Day Residency</span>
+          </div>
+
+          <div class="flyer-apply-footer">
+            <div class="flyer-apply-copy">
+              <h5>Apply to Join the Creator Community</h5>
+              <p>Scan the QR placeholder or visit the application portal to submit your creator profile &amp; portfolio:</p>
+              <span class="flyer-url-pill">[ VOXAHOUSE.COM/JOIN · @VOXAHOUSE ]</span>
+            </div>
+            <div class="flyer-qr-box">
+              <span>QR Placeholder</span>
+              <img src="assets/qr-voxa-gold.png" alt="QR Code Placeholder" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="board-foot">
+      <div><strong>Format Verification:</strong> IG Portrait (1080×1350) · IG Square (1080×1080) · IG Story (1080×1920) · US Letter Flyer (8.5×11")</div>
+      <div><strong>Placeholders Marked:</strong> Application URL, Handle, QR Code &amp; Final Program Terms Editable</div>
+    </footer>
+  </section>
+
+  <!-- =======================================================================
+       BOARD 03: COMPLETE 12-SLIDE VISUAL DECK ARCHITECTURE (ALL 12 SLIDES)
+       ======================================================================= -->
+  <section class="editorial-board" id="board-03">
+    <header class="board-masthead dark">
+      <div class="brand-lockup">
+        <div class="voxa-frame">
+          <span class="v">VOXA</span>
+          <span class="h">HOUSE</span>
+        </div>
+        <span class="collab-sep">×</span>
+        <div class="outdoer-mark"><em>(Out)</em>doer.</div>
+      </div>
+      <div class="masthead-center">
+        Board 03 / 03 · Complete 12-Slide Widescreen Deck Contact Sheet (All 12 Slides Visually Built)
+      </div>
+      <div class="masthead-right">
+        <span>General Creator Recruitment · Zero "Vanessa" Copy</span>
+      </div>
+    </header>
+
+    <div class="b3-body">
+      <div class="b3-grid">
+        <!-- Slide 01 -->
+        <div class="mini-slide-card">
+          <div class="mini-slide-label"><strong>Slide 01 · Cover</strong><span>VOXA House × Outdoer</span></div>
+          <div class="mini-slide-frame dark-slide">
+            <div class="ms-copy">
+              <span class="ms-kicker">01 · Official Collaboration</span>
+              <div>
+                <h4>Where Creators Build Culture, Content &amp; Community.</h4>
+                <p>VOXA House × Outdoer Creator Recruitment Presentation.</p>
+              </div>
+              <div class="ms-foot"><span>VOXA HOUSE × OUTDOER</span><span>01 / 12</span></div>
+            </div>
+            <div class="ms-photo split-2">
+              <img src="assets/photos/voxa_p5_92_1073x719.png" alt="Slide 1A" />
+              <img src="assets/photos/outdoer_p1_6_2924x1649.jpeg" alt="Slide 1B" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 02 -->
+        <div class="mini-slide-card">
+          <div class="mini-slide-label"><strong>Slide 02 · The Collaboration</strong><span>Partnership Purpose</span></div>
+          <div class="mini-slide-frame ivory-slide">
+            <div class="ms-copy">
+              <span class="ms-kicker">02 · The Collaboration</span>
+              <div>
+                <h4>Two Distinct Identities. One Shared Creator Vision.</h4>
+                <p>VOXA House leads community &amp; retreats; Outdoer powers multi-brand seasonal style.</p>
+              </div>
+              <div class="ms-foot"><span>PARTNERSHIP OVERVIEW</span><span>02 / 12</span></div>
+            </div>
+            <div class="ms-photo">
+              <img src="assets/photos/voxa_p3_50_724x543.png" alt="Slide 2" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 03 -->
+        <div class="mini-slide-card">
+          <div class="mini-slide-label"><strong>Slide 03 · Meet Outdoer</strong><span>13 Brands · 8 Scenes</span></div>
+          <div class="mini-slide-frame cream-slide">
+            <div class="ms-copy">
+              <span class="ms-kicker">03 · Brand Partner</span>
+              <div>
+                <h4>Meet (Out)doer: Curated Style Across Eight Scenes.</h4>
+                <p>13 contemporary brands—from Stowe &amp; Big Sur to Soho &amp; PNW—in one destination.</p>
+              </div>
+              <div class="ms-foot"><span>APPROVED OUTDOER IMAGERY</span><span>03 / 12</span></div>
+            </div>
+            <div class="ms-photo split-2">
+              <img src="assets/photos/outdoer_p3_38_1143x1649.jpeg" alt="Slide 3A" />
+              <img src="assets/photos/outdoer_p7_54_2931x1652.jpeg" alt="Slide 3B" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 04 -->
+        <div class="mini-slide-card">
+          <div class="mini-slide-label"><strong>Slide 04 · VOXA Community</strong><span>Recruiting &amp; Supporting</span></div>
+          <div class="mini-slide-frame dark-slide">
+            <div class="ms-copy">
+              <span class="ms-kicker">04 · VOXA House Ecosystem</span>
+              <div>
+                <h4>The VOXA House Creator Community &amp; Media Days.</h4>
+                <p>Connecting creators through curated welcome kits, production support, and mentorship.</p>
+              </div>
+              <div class="ms-foot"><span>COMMUNITY &amp; PRODUCTION</span><span>04 / 12</span></div>
+            </div>
+            <div class="ms-photo">
+              <img src="assets/photos/voxa_p1_42_1076x717.png" alt="Slide 4" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 05 -->
+        <div class="mini-slide-card">
+          <div class="mini-slide-label"><strong>Slide 05 · Who We Seek</strong><span>Creator Alignment</span></div>
+          <div class="mini-slide-frame ivory-slide">
+            <div class="ms-copy">
+              <span class="ms-kicker">05 · Creator Casting</span>
+              <div>
+                <h4>Who We’re Looking For: Elevated Modern Voices.</h4>
+                <div class="ms-tags">
+                  <span>Fashion</span><span>Lifestyle</span><span>Wellness</span><span>Travel</span>
+                </div>
+              </div>
+              <div class="ms-foot"><span>CREATOR PROFILE</span><span>05 / 12</span></div>
+            </div>
+            <div class="ms-photo split-2">
+              <img src="assets/photos/voxa_p4_56_724x543.png" alt="Slide 5A" />
+              <img src="assets/photos/outdoer_p6_46_947x1651.jpeg" alt="Slide 5B" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 06 -->
+        <div class="mini-slide-card">
+          <div class="mini-slide-label"><strong>Slide 06 · How It Works</strong><span>Creator Journey</span></div>
+          <div class="mini-slide-frame dark-slide">
+            <div class="ms-copy">
+              <span class="ms-kicker">06 · Participation</span>
+              <div>
+                <h4>How Participation Works: Seamless Onboarding.</h4>
+                <p>1. Apply &amp; Onboard · 2. Seasonal Outdoer Styling [TBC] · 3. Create &amp; Earn · 4. Retreat Access.</p>
+              </div>
+              <div class="ms-foot"><span>TERMS PLACEHOLDER</span><span>06 / 12</span></div>
+            </div>
+            <div class="ms-photo">
+              <img src="assets/photos/outdoer_p4_41_1189x1652.jpeg" alt="Slide 6" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 07 -->
+        <div class="mini-slide-card">
+          <div class="mini-slide-label"><strong>Slide 07 · Content Pillars</strong><span>Storytelling Formats</span></div>
+          <div class="mini-slide-frame cream-slide">
+            <div class="ms-copy">
+              <span class="ms-kicker">07 · Content That Connects</span>
+              <div>
+                <h4>Unboxings, Try-Ons &amp; Real-World Storytelling.</h4>
+                <p>Editorial reels, seasonal lookbooks, and authentic day-in-the-life integration.</p>
+              </div>
+              <div class="ms-foot"><span>CREATIVE FORMATS</span><span>07 / 12</span></div>
+            </div>
+            <div class="ms-photo">
+              <img src="assets/photos/outdoer_p10_68_2931x1652.jpeg" alt="Slide 7" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 08 -->
+        <div class="mini-slide-card">
+          <div class="mini-slide-label"><strong>Slide 08 · Affiliate Tiers</strong><span>Program Structure [TBC]</span></div>
+          <div class="mini-slide-frame dark-slide">
+            <div class="ms-copy">
+              <span class="ms-kicker">08 · Affiliate Opportunity</span>
+              <div>
+                <h4>Tiered Commission &amp; Growth Rewards [TBC].</h4>
+                <p>Basecamp (12%) · Trailhead (15%) · Summit (18% + Retreat Priority). Terms TBC.</p>
+              </div>
+              <div class="ms-foot"><span>APPROVED SOURCE STRUCTURE</span><span>08 / 12</span></div>
+            </div>
+            <div class="ms-photo">
+              <img src="assets/photos/voxa_p3_51_435x580.png" alt="Slide 8" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 09 -->
+        <div class="mini-slide-card">
+          <div class="mini-slide-label"><strong>Slide 09 · Creating Together</strong><span>Shoots &amp; Zero Exclusivity</span></div>
+          <div class="mini-slide-frame ivory-slide">
+            <div class="ms-copy">
+              <span class="ms-kicker">09 · Community Collaboration</span>
+              <div>
+                <h4>Creating Together: Crew Shoots &amp; Zero Exclusivity.</h4>
+                <p>Quarterly production days, shared studio access, and complete brand independence.</p>
+              </div>
+              <div class="ms-foot"><span>COLLABORATIVE SHOOTS</span><span>09 / 12</span></div>
+            </div>
+            <div class="ms-photo">
+              <img src="assets/photos/voxa_p7_112_538x732.png" alt="Slide 9" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 10 -->
+        <div class="mini-slide-card">
+          <div class="mini-slide-label"><strong>Slide 10 · VOXA Retreat</strong><span>Residency Experience</span></div>
+          <div class="mini-slide-frame dark-slide">
+            <div class="ms-copy">
+              <span class="ms-kicker">10 · Signature Residency</span>
+              <div>
+                <h4>The VOXA House Retreat In Collaboration with Outdoer.</h4>
+                <p>A distinct VOXA House residency uniting content production, wellness, and community.</p>
+              </div>
+              <div class="ms-foot"><span>DISTINCT RETREAT IDENTITY</span><span>10 / 12</span></div>
+            </div>
+            <div class="ms-photo split-2">
+              <img src="assets/photos/voxa_p15_186_1073x719.png" alt="Slide 10A" />
+              <img src="assets/photos/voxa_p6_108_922x615.png" alt="Slide 10B" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 11 -->
+        <div class="mini-slide-card">
+          <div class="mini-slide-label"><strong>Slide 11 · Retreat Itinerary</strong><span>Proposed 3-Day Schedule</span></div>
+          <div class="mini-slide-frame cream-slide">
+            <div class="ms-copy">
+              <span class="ms-kicker">11 · Proposed Itinerary</span>
+              <div>
+                <h4>Three Days: Arrive, Create &amp; Build Together.</h4>
+                <p>Day 1 Arrive &amp; Connect · Day 2 Create &amp; Explore · Day 3 Build &amp; Depart [Details TBC].</p>
+              </div>
+              <div class="ms-foot"><span>DATES &amp; ELIGIBILITY TBC</span><span>11 / 12</span></div>
+            </div>
+            <div class="ms-photo split-2">
+              <img src="assets/photos/outdoer_p8_59_2043x1152.jpeg" alt="Slide 11A" />
+              <img src="assets/photos/outdoer_p9_63_2043x1152.jpeg" alt="Slide 11B" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 12 -->
+        <div class="mini-slide-card">
+          <div class="mini-slide-label"><strong>Slide 12 · Apply &amp; Connect</strong><span>Application &amp; Next Steps</span></div>
+          <div class="mini-slide-frame dark-slide">
+            <div class="ms-copy">
+              <span class="ms-kicker">12 · Next Steps</span>
+              <div>
+                <h4>Apply to Join the Creator Community.</h4>
+                <p>Portal: [voxahouse.com/join] · Handle: [@voxahouse] · Scan QR to submit profile.</p>
+              </div>
+              <div class="ms-foot"><span>EDITABLE PLACEHOLDERS</span><span>12 / 12</span></div>
+            </div>
+            <div class="ms-photo" style="display:grid;grid-template-rows:1fr auto;background:#120C0F;">
+              <img src="assets/photos/voxa_p6_106_687x573.png" alt="Slide 12" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="board-foot dark">
+      <div><strong>Image Sources &amp; Licensing:</strong> 100% Approved Brand Photography from Client-Supplied <em>VOXA House Vision 2027</em> &amp; <em>Outdoer Ambassador Deck</em> ($0 Stock Fee)</div>
+      <div><strong>Deliverables Included:</strong> 12-Slide Editable Deck + PDF · IG 4:5 &amp; 1:1 · IG 9:16 Story · 8.5×11" Flyer</div>
+    </footer>
+  </section>
+
+</body>
+</html>
